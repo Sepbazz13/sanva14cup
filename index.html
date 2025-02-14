@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felíz San Valentín</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/9633/9633625.png">
+<body>
+    <div class="container">
+        <button class="open-btn" onclick="openLetter()">Presiona aquí preciosa</button>
+        <div class="letter-container" id="letterContainer">
+            <div class="letter">
+                <div class="letter-top"></div>
+                <div class="letter-body">
+                    <img src="./images/a2.jpg" alt="Imagen de San Valentín" class="letter-image">
+                    <div class="letter-content">
+                        <h2>Feliz San Valentín</h2>
+                        <p>De la vida estoy agradecido, contento y sobretodo felíz a tu lado, siempre te digo que estoy en deuda contigo por todo lo que das por nostros y valoro mucho eso. Te amo con la vida entera. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openLetter() {
+            document.getElementById("letterContainer").classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

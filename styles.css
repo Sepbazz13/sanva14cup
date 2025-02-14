@@ -1,0 +1,122 @@
+/* styles.css */
+body {
+    background-image: url("./images/a3.jpg");
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija el fondo para que no se desplace con el scroll */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.open-btn {
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.open-btn:hover {
+    background: #ff8fa3;
+    transform: scale(1.1);
+}
+
+.letter-container {
+    display: none;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    width: 90%;
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.letter-container.show {
+    display: flex;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.letter {
+    position: relative;
+    width: 100%;
+    background-color: #fdf1dc;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.letter-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.letter-image {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.letter-image:hover {
+    transform: scale(1.1);
+}
+
+.letter-content {
+    text-align: center;
+    color: #ff4d6d;
+    font-size: 1.2em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.letter-content:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 600px) {
+    .open-btn {
+        width: 100%;
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    .letter {
+        width: 100%;
+    }
+}
